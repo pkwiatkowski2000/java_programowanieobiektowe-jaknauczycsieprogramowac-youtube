@@ -1,6 +1,6 @@
 package pl.rectorapator;
 
-public class Main {
+/*public class Main {
 
     public static void main(String[] args) {
         Garnek garnek = new Garnek(5, 10);
@@ -14,6 +14,17 @@ public class Main {
         int temperatura = garnek.zwrocTemperatureWrzeniaWody();
         System.out.println(garnek.zwrocTemperatureWrzeniaWody());
 
-        garnek.gotujBezInformacji();
+        garnek.gotujBezInformacji();*/
+
+public class Main {
+
+    public static void main(String[] args) {
+        Uzytkownik mariusz = new Uzytkownik(20, "Mariusz");
+
+        if (mariusz.czyMozeLegalnieKupicAlkohol()) {
+            System.out.println("Może kupić");
+        } else {
+            System.out.println("Nie może kupić");
+        }
     }
 }
