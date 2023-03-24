@@ -3,14 +3,17 @@ package pl.rectorapator;
 public class Main {
 
     public static void main(String[] args) {
-        Garnek garnek = new Garnek();
+        Garnek garnek = new Garnek(5, 10);
 
-        garnek.średnica = 7;
-        garnek.wysokość = 5;
-        garnek. kolor = "Srebrny";
+        String wiadomosc = garnek.gotuj();
+        System.out.println(wiadomosc);
 
-        System.out.println(garnek.średnica);
-        System.out.println(garnek.wysokość);
-        System.out.println(garnek.kolor);
+        String wiadomosc2 = garnek.gotuj(true);
+        System.out.println(wiadomosc2);
+
+        int temperatura = garnek.zwrocTemperatureWrzeniaWody();
+        System.out.println(garnek.zwrocTemperatureWrzeniaWody());
+
+        garnek.gotujBezInformacji();
     }
 }
