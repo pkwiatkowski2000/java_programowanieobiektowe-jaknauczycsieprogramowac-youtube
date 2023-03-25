@@ -1,4 +1,6 @@
-package pl.rectorapator2;
+package pl.rectorapator2.drive;
+
+import pl.rectorapator2.File;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,6 +9,7 @@ public class SSDDrive implements Drive {
     Map<String, File> files = new HashMap<>();
     @Override
     public void addFile(File file) {
+        files.put(file.toString(), file);
 
     }
 
