@@ -1,6 +1,7 @@
 package pl.rectorapator2;
 
 import pl.rectorapator2.drive.Drive;
+import pl.usbdevice.USBDevice;
 
 import java.util.ArrayList;
 import java.util.List;
