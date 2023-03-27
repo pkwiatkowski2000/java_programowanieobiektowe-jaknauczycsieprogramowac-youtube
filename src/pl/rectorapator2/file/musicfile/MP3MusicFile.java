@@ -15,6 +15,6 @@ public class MP3MusicFile extends AbstractMusicFile {
     }
 
     public int getQuality() {
-        return this.quality;
+        return quality;
     }
 }
