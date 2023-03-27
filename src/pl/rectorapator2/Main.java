@@ -1,5 +1,6 @@
 package pl.rectorapator2;
 
+import pl.rectorapator2.drive.Drive;
 import pl.rectorapator2.drive.HDDDrive;
 import pl.rectorapator2.drive.SSDDrive;
 import pl.rectorapator2.file.File;
@@ -16,12 +17,12 @@ public class Main {
         JPGImageFile jpg1 = new JPGImageFile("nazwa1.jpg", 200, 80);
         MP3MusicFile mp3file = new MP3MusicFile("plik.mp3", 4000, "Marilyn Manson", "Broken Needle", 100);
 
-        SSDDrive drive = new SSDDrive();
+        Drive drive = new HDDDrive();
         drive.addFile(gif1);
         drive.addFile(jpg1);
         drive.addFile(mp3file);
 
-//        drive.listFiles();
+        drive.listFiles();
         File file = drive.findFile("plik.mp3");
         System.out.println(mp3file.getSize());
     }
