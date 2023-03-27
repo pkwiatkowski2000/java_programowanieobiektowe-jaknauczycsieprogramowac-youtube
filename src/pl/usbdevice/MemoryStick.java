@@ -2,6 +2,7 @@ package pl.usbdevice;
 
 public class MemoryStick implements USBDevice {
     private String name;
+    private boolean ejected = false;
 
     public MemoryStick(String name) {
         this.name = name;
@@ -20,7 +21,13 @@ public class MemoryStick implements USBDevice {
             return false;
         } else {
             System.out.println("Memory Stick disconnected");
+            return true;
         }
+    }
+
+    public void eject() {
+        System.out.println("Ejecting Memory Stick");
+        ejected = true;
     }
 
     @Override
