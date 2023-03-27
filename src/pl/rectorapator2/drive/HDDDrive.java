@@ -1,6 +1,6 @@
 package pl.rectorapator2.drive;
 
-import pl.rectorapator2.File;
+import pl.rectorapator2.file.File;
 
 import java.util.ArrayList;
 import java.util.List;

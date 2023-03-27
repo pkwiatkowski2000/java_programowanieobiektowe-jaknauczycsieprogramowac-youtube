@@ -26,7 +26,5 @@ public class Main {
         memoryStick.eject();
         computer.removeUSBDevice(memoryStick);
         computer.removeUSBDevice(mouse);
-
-        computer.usbDevices
     }
 }
